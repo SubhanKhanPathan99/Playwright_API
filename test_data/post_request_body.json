@@ -1,0 +1,11 @@
+{
+            "firstname": "Clay ",
+            "lastname": "Jenson",
+            "totalprice": 1000,
+            "depositpaid":true,
+            "bookingdates":{
+                "checkin": "2027-01-01",
+                "checkout":"2028-02-01"
+            },
+            "additionalneeds":"WIchita bowls"
+}
