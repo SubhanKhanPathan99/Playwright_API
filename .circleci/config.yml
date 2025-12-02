@@ -33,7 +33,7 @@ jobs:
       - store_artifacts:
           path: allure-results
       - store_test_results:
-          path: allure-results
+          path: junit-results
 
 workflows:
   version: 2
