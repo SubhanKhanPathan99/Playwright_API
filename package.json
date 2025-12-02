@@ -12,8 +12,9 @@
   "type": "commonjs",
   "devDependencies": {
     "@cucumber/cucumber": "^12.2.0",
-    "@playwright/test": "^1.56.0",
+    "@playwright/test": "^1.57.0",
     "@types/node": "^24.7.1",
+    "allure-playwright": "^3.4.3",
     "playwright-bdd": "^8.4.1"
   },
   "dependencies": {

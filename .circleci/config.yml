@@ -1,0 +1,43 @@
+version: 2.1
+
+jobs:
+  run-bdd-tests:
+    docker:
+      # Official Playwright image (includes browsers & dependencies)
+      - image: mcr.microsoft.com/playwright:v1.57.0-jammy
+
+    steps:
+      - checkout
+
+      # Install Dependencies
+      - run:
+          name: Install project dependencies
+          command: |
+            npm ci
+
+      # Install Playwright Browsers
+      - run:
+          name: Install Playwright browsers
+          command: |
+            npx playwright install --with-deps
+
+      # Run Cucumber + Playwright BDD tests
+      - run:
+          name: Run Cucumber BDD Tests
+          command: |
+            npm test
+
+      # Save Reports (Allure + HTML)
+      - store_artifacts:
+          path: my-allure-results
+      - store_artifacts:
+          path: playwright-report
+      - store_test_results:
+          path: my-allure-results
+
+
+workflows:
+  version: 2
+  run-tests:
+    jobs:
+      - run-bdd-tests
