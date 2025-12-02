@@ -1,0 +1,41 @@
+$$$$$$$$$  POST RESPONE  $$$$$$$$$$
+{
+  bookingid: 3078,
+  booking: {
+    firstname: 'Brionna',
+    lastname: 'Kessler',
+    totalprice: 456,
+    depositpaid: true,
+    bookingdates: { checkin: '2025-12-02', checkout: '2025-12-07' },
+    additionalneeds: 'super bowls'
+  }
+}
+__________ GET RESPONSE __________
+{
+  firstname: 'Brionna',
+  lastname: 'Kessler',
+  totalprice: 456,
+  depositpaid: true,
+  bookingdates: { checkin: '2025-12-02', checkout: '2025-12-07' },
+  additionalneeds: 'super bowls'
+}
+===========  PUT RESPONSE  ============
+Token No : 19a0df5a6579efa
+{
+  firstname: 'Henry',
+  lastname: 'Jenson',
+  totalprice: 1000,
+  depositpaid: true,
+  bookingdates: { checkin: '2027-01-01', checkout: '2028-02-01' },
+  additionalneeds: 'WIchita bowls'
+}
+|||||||||| PATCH RESPONSE |||||||||||
+{
+  firstname: 'Henry',
+  lastname: 'Jenson',
+  totalprice: 1000,
+  depositpaid: true,
+  bookingdates: { checkin: '2027-01-01', checkout: '2028-02-01' },
+  additionalneeds: 'WIchita bowls'
+}
+^^^^^^^^  DELETE RESPONSE ^^^^^^^^^^

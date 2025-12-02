@@ -33,7 +33,7 @@ jobs:
       - store_artifacts:
           path: my-allure-results
       - store_test_results:
-          path: my-allure-results
+          path: allure-results
 
 workflows:
   version: 2
