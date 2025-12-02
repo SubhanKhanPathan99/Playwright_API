@@ -31,7 +31,7 @@ jobs:
       - store_artifacts:
           path: playwright-report
       - store_artifacts:
-          path: my-allure-results
+          path: allure-results
       - store_test_results:
           path: allure-results
 
