@@ -1,11 +1,11 @@
-import  {faker} from '@faker-js/faker'
+const { faker } = require('@faker-js/faker');
 const   {test, expect}    = require('playwright/test')
 const   {DateTime}        = require('luxon')
 const   tokenreqbdy       = require('../test_data/put_body.json')
 const   putreqbdy         = require('../test_data/post_request_body.json')
 const   patchreqbody      = require('../test_data/patch_body.json')
 
-test('Create POST Request',async({request})=>{
+test('API Request',async({request})=>{
     const firstname1        = faker.person.firstName();
     const lastname1         = faker.person.lastName();
     const totalprice1       = faker.number.int(1000);
