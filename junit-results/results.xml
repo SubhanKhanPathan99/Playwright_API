@@ -1,14 +1,14 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="5.036952999994159">
-<testsuite name="End_to_End_API_Testing.spec.js" timestamp="2025-12-04T16:39:29.141Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.005" errors="0">
-<testcase name="API Request" classname="End_to_End_API_Testing.spec.js" time="1.005">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="13.165340000003576">
+<testsuite name="End_to_End_API_Testing.spec.js" timestamp="2025-12-04T16:56:46.750Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.925" errors="0">
+<testcase name="API Request" classname="End_to_End_API_Testing.spec.js" time="0.925">
 <system-out>
-<![CDATA[$$$$$$$$$  POST RESPONE  $$$$$$$$$$
+<![CDATA[$$$$$$$$$ POST RESPONSE $$$$$$$$$
 {
-  bookingid: [33m4321[39m,
+  bookingid: [33m3347[39m,
   booking: {
-    firstname: [32m'Ismael'[39m,
-    lastname: [32m'Daugherty'[39m,
-    totalprice: [33m51[39m,
+    firstname: [32m'Alexis'[39m,
+    lastname: [32m'Cremin'[39m,
+    totalprice: [33m831[39m,
     depositpaid: [33mtrue[39m,
     bookingdates: { checkin: [32m'2025-12-04'[39m, checkout: [32m'2025-12-09'[39m },
     additionalneeds: [32m'super bowls'[39m
@@ -16,15 +16,15 @@
 }
 __________ GET RESPONSE __________
 {
-  firstname: [32m'Ismael'[39m,
-  lastname: [32m'Daugherty'[39m,
-  totalprice: [33m51[39m,
+  firstname: [32m'Alexis'[39m,
+  lastname: [32m'Cremin'[39m,
+  totalprice: [33m831[39m,
   depositpaid: [33mtrue[39m,
   bookingdates: { checkin: [32m'2025-12-04'[39m, checkout: [32m'2025-12-09'[39m },
   additionalneeds: [32m'super bowls'[39m
 }
-===========  PUT RESPONSE  ============
-Token No : 28142fe96f92a8f
+=========== PUT RESPONSE ===========
+Token No : 744fb9f4a889102
 {
   firstname: [32m'Henry'[39m,
   lastname: [32m'Jenson'[39m,
@@ -42,7 +42,7 @@ Token No : 28142fe96f92a8f
   bookingdates: { checkin: [32m'2027-01-01'[39m, checkout: [32m'2028-02-01'[39m },
   additionalneeds: [32m'WIchita bowls'[39m
 }
-^^^^^^^^  DELETE RESPONSE ^^^^^^^^^^
+^^^^^^^^ DELETE RESPONSE ^^^^^^^^^
 ]]>
 </system-out>
 </testcase>
