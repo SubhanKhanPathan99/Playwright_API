@@ -1,9 +1,10 @@
+const fs = require('fs');
 const { faker } = require('@faker-js/faker');
 const   {test, expect}    = require('playwright/test')
 const   {DateTime}        = require('luxon')
-const   tokenreqbdy       = require('../test_data/put_body.json')
-const   putreqbdy         = require('../test_data/post_request_body.json')
-const   patchreqbody      = require('../test_data/patch_body.json')
+const tokenreqbdy  = JSON.parse(fs.readFileSync(require.resolve('../test_data/put_body.json'), 'utf8'));
+const putreqbdy    = JSON.parse(fs.readFileSync(require.resolve('../test_data/post_request_body.json'), 'utf8'));
+const patchreqbody = JSON.parse(fs.readFileSync(require.resolve('../test_data/patch_body.json'), 'utf8'));
 
 test('API Request',async({request})=>{
     const firstname1        = faker.person.firstName();
